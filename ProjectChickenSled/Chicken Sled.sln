@@ -1,11 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chicken Sled.Plugins", "Chicken Sled.Plugins.csproj", "{790233F6-1F18-B8DD-09B1-0D5BE72C43E4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chicken Sled", "Chicken Sled.csproj", "{DA3CB1B4-1FCA-390C-493A-B82E5E185E6F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chicken Sled.Editor.Plugins", "Chicken Sled.Editor.Plugins.csproj", "{05B8FB12-20C9-8B05-4C69-D1CA27239DBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,18 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{790233F6-1F18-B8DD-09B1-0D5BE72C43E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{790233F6-1F18-B8DD-09B1-0D5BE72C43E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{790233F6-1F18-B8DD-09B1-0D5BE72C43E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{790233F6-1F18-B8DD-09B1-0D5BE72C43E4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DA3CB1B4-1FCA-390C-493A-B82E5E185E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DA3CB1B4-1FCA-390C-493A-B82E5E185E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA3CB1B4-1FCA-390C-493A-B82E5E185E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA3CB1B4-1FCA-390C-493A-B82E5E185E6F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{05B8FB12-20C9-8B05-4C69-D1CA27239DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{05B8FB12-20C9-8B05-4C69-D1CA27239DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{05B8FB12-20C9-8B05-4C69-D1CA27239DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{05B8FB12-20C9-8B05-4C69-D1CA27239DBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
