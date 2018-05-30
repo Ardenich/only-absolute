@@ -83,6 +83,7 @@
     <Compile Include="Assets\ButtonExit.cs" />
     <Compile Include="Assets\ButtonStart.cs" />
     <Compile Include="Assets\TerrainHugger.cs" />
+    <Compile Include="Assets\Timer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
