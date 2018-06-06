@@ -8,9 +8,10 @@ public class BasicMovement : MonoBehaviour {
     float steer;
     float turnSpeed = 1f;
     float brake = 3f;
-    float moveSpeed = 60f;
+    float moveSpeed = 200f;
+    public float timer;
 
-    Rigidbody rb;
+    public Rigidbody rb;
 
     float distGround;
     // Use this for initialization
@@ -25,7 +26,7 @@ public class BasicMovement : MonoBehaviour {
 
     void Update()
     {
-        
+        timer = Time.time;
     }
     
     void FixedUpdate ()
@@ -34,13 +35,10 @@ public class BasicMovement : MonoBehaviour {
         move = Input.GetAxis("Vertical");
         
         rb.drag = (move * (-1)) / brake;
-        if(GroundCheck()) rb.AddForce(transform.forward * moveSpeed);
+        if (timer > 3)
+        {
+            rb.AddForce(transform.forward * moveSpeed);
+        }
         transform.Rotate(0, steer * turnSpeed, 0);
-    }
-
-
-    bool GroundCheck()
-    {
-        return Physics.Raycast(transform.position, Vector3.down, distGround + 0.1f);
     }
 }
