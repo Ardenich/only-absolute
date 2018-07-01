@@ -32,8 +32,8 @@ public class FinishLine : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            times.text = time.timerr.text;
-            DestroyObject(oldTimer);
+            times.text = time.timerInGame.text;
+            oldTimer.gameObject.SetActive(false);
             times.gameObject.SetActive(true);
             finish.gameObject.SetActive(true);
             speed.rb.drag = 3;

@@ -82,8 +82,11 @@
     <Compile Include="Assets\Scripts\BasicMovement.cs" />
     <Compile Include="Assets\Scripts\ButtonExit.cs" />
     <Compile Include="Assets\Scripts\ButtonStart.cs" />
+    <Compile Include="Assets\Scripts\CamStabilizer.cs" />
     <Compile Include="Assets\Scripts\FinishLine.cs" />
-    <Compile Include="Assets\Scripts\TerrainHugger.cs" />
+    <Compile Include="Assets\Scripts\NPC.cs" />
+    <Compile Include="Assets\Scripts\SelfDriving.cs" />
+    <Compile Include="Assets\Scripts\SelfDrivingMap2.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

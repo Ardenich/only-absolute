@@ -7,14 +7,14 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour {
     
     public float timer;
-    public Text timerr;
-    public Text timmer;
+    public Text timerInGame;
+    public Text timerCountdown;
 
 
 	// Use this for initialization
 	void Start () {
-        timerr.gameObject.SetActive(false);
-        timmer.gameObject.SetActive(false);
+        timerInGame.gameObject.SetActive(false);
+        timerCountdown.gameObject.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -22,14 +22,14 @@ public class Timer : MonoBehaviour {
         timer = Time.time - 4;
         if (timer < 0)
         {
-            timmer.gameObject.SetActive(true);
+            timerCountdown.gameObject.SetActive(true);
         } else
         {
-            timmer.gameObject.SetActive(false);
-            timerr.gameObject.SetActive(true);
+            timerCountdown.gameObject.SetActive(false);
+                timerInGame.gameObject.SetActive(true);
         }
-        timmer.text = FormatTimer(timer);
-        timerr.text = FormatTimer(timer);
+        timerCountdown.text = FormatTimer(timer);
+        timerInGame.text = FormatTimer(timer);
     }
 
     private string FormatTimer(float timer)
