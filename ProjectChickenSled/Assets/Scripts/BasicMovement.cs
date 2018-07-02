@@ -8,7 +8,7 @@ public class BasicMovement : MonoBehaviour {
     float steer;
     float turnSpeed = 1f;
     float brake = 3f;
-    float moveSpeed = 200f;
+    float moveSpeed = 300f;
     public float timer;
 
     public Rigidbody rb;
@@ -18,7 +18,7 @@ public class BasicMovement : MonoBehaviour {
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Vector3 cog = new Vector3(0, 0, 0);
+        Vector3 cog = new Vector3(0, -1, 0);
         rb.centerOfMass = cog;
     }
 
@@ -40,5 +40,12 @@ public class BasicMovement : MonoBehaviour {
             rb.AddForce(transform.forward * moveSpeed);
         }
         transform.Rotate(0, steer * turnSpeed, 0);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "FinishLine")
+        {
+            moveSpeed = 0;
+        }
     }
 }
