@@ -83,11 +83,25 @@
     <Compile Include="Assets\Scripts\ButtonExit.cs" />
     <Compile Include="Assets\Scripts\ButtonStart.cs" />
     <Compile Include="Assets\Scripts\CamStabilizer.cs" />
+    <Compile Include="Assets\Scripts\CreditsButton.cs" />
     <Compile Include="Assets\Scripts\FinishLine.cs" />
+    <Compile Include="Assets\Scripts\GameMusic.cs" />
+    <Compile Include="Assets\Scripts\LoadStage1.cs" />
+    <Compile Include="Assets\Scripts\LoadStage2.cs" />
+    <Compile Include="Assets\Scripts\LoadStageTutorial.cs" />
+    <Compile Include="Assets\Scripts\MainMusic.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
+    <Compile Include="Assets\Scripts\ObstacleCrash.cs" />
+    <Compile Include="Assets\Scripts\ObstacleSlide.cs" />
+    <Compile Include="Assets\Scripts\Positioning.cs" />
+    <Compile Include="Assets\Scripts\PositionTracker.cs" />
+    <Compile Include="Assets\Scripts\PositionTrackerMap2.cs" />
     <Compile Include="Assets\Scripts\SelfDriving.cs" />
     <Compile Include="Assets\Scripts\SelfDrivingMap2.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Music and credit\credit.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

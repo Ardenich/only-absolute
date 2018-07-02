@@ -9,12 +9,19 @@ public class Timer : MonoBehaviour {
     public float timer;
     public Text timerInGame;
     public Text timerCountdown;
+    public Text position;
 
+    GameObject player;
+    BasicMovement ranks;
 
 	// Use this for initialization
 	void Start () {
         timerInGame.gameObject.SetActive(false);
         timerCountdown.gameObject.SetActive(false);
+        position.gameObject.SetActive(false);
+
+        player = GameObject.FindGameObjectWithTag("Player");
+        ranks = player.GetComponent<BasicMovement>();
 	}
 	
 	// Update is called once per frame
@@ -26,10 +33,12 @@ public class Timer : MonoBehaviour {
         } else
         {
             timerCountdown.gameObject.SetActive(false);
-                timerInGame.gameObject.SetActive(true);
+            timerInGame.gameObject.SetActive(true);
+            position.gameObject.SetActive(true);
         }
         timerCountdown.text = FormatTimer(timer);
         timerInGame.text = FormatTimer(timer);
+        position.text = ranks.rank.ToString() + "/4";
     }
 
     private string FormatTimer(float timer)

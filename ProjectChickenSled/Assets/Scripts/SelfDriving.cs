@@ -52,7 +52,7 @@ public class SelfDriving : MonoBehaviour {
                 trackerNumber = 0;
             }
         }
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0);
         this.GetComponent<BoxCollider>().enabled = true;
     }
 }

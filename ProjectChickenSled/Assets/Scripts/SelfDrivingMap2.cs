@@ -13,6 +13,7 @@ public class SelfDrivingMap2 : MonoBehaviour {
     public GameObject track6;
     public GameObject track7;
     public GameObject track8;
+    public GameObject track9;
     public int trackerNumber;
 
     // Update is called once per frame
@@ -49,6 +50,10 @@ public class SelfDrivingMap2 : MonoBehaviour {
         {
             tracker.transform.position = track8.transform.position;
         }
+        if (trackerNumber == 8)
+        {
+            tracker.transform.position = track9.transform.position;
+        }
     }
 
     private IEnumerator OnTriggerEnter(Collider other)
@@ -57,7 +62,7 @@ public class SelfDrivingMap2 : MonoBehaviour {
         {
             this.GetComponent<BoxCollider>().enabled = false;
             trackerNumber += 1;
-            if (trackerNumber == 6)
+            if (trackerNumber == 8)
             {
                 trackerNumber = 0;
             }

@@ -7,7 +7,7 @@ public class NPC : MonoBehaviour
 
     float turnSpeed = 3f;
     float brake = 3f;
-    float moveSpeed;
+    public float moveSpeed;
 
     public GameObject trace;
 
@@ -27,9 +27,9 @@ public class NPC : MonoBehaviour
         Vector3 cog = new Vector3(0, -1, 0);
         rb.centerOfMass = cog;
 
-        if (this.name == "Cow") moveSpeed = 40f;
-        if (this.name == "Dog") moveSpeed = 41f;
-        if (this.name == "Sheep") moveSpeed = 42f;
+        if (this.name == "Cow") moveSpeed = 23f;
+        if (this.name == "Dog") moveSpeed = 24f;
+        if (this.name == "Sheep") moveSpeed = 25f;
     }
 
     // Update is called once per frame
@@ -44,8 +44,8 @@ public class NPC : MonoBehaviour
         Vector3 direction = trace.transform.position - transform.position;
         Quaternion rotation = Quaternion.LookRotation(direction);
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, turning);
-        
-        if (timer > 4)
+
+        if (timer > 3)
         {
             transform.position = Vector3.MoveTowards(transform.position, trace.transform.position, speed);
         }
