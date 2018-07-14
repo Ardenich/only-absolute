@@ -5,7 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Terrain
+<<<<<<< HEAD
   - Wheel
+=======
+  - NPC
+  - FinishLine
+  - Music
+>>>>>>> cf708461c1b23e010f9dfe4521a1eccefac675dd
   layers:
   - Default
   - TransparentFX

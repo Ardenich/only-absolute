@@ -16,7 +16,6 @@ public class ButtonStart : MonoBehaviour {
 	}
     public void RestartGame()
     {
-        GameObject game; 
         SceneManager.LoadScene("Stage Select");
     }
 }

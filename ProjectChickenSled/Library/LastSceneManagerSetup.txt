@@ -1,7 +1,17 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Stage1.unity
   isLoaded: 1
   isActive: 1
 - path: Assets/Scenes/Trial.unity
+=======
+- path: Assets/Scenes/Stage Select.unity
+  isLoaded: 1
+  isActive: 1
+- path: Assets/Scenes/Stage1.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/Stage2.unity
+>>>>>>> cf708461c1b23e010f9dfe4521a1eccefac675dd
   isLoaded: 1
   isActive: 0

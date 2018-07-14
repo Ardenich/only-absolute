@@ -7,14 +7,31 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour {
     
     public float timer;
+<<<<<<< HEAD
     public Text timerr;
     public Text timmer;
+=======
+    public Text timerInGame;
+    public Text timerCountdown;
+    public Text position;
+>>>>>>> cf708461c1b23e010f9dfe4521a1eccefac675dd
 
+    GameObject player;
+    BasicMovement ranks;
 
 	// Use this for initialization
 	void Start () {
+<<<<<<< HEAD
         timerr.gameObject.SetActive(false);
         timmer.gameObject.SetActive(false);
+=======
+        timerInGame.gameObject.SetActive(false);
+        timerCountdown.gameObject.SetActive(false);
+        position.gameObject.SetActive(false);
+
+        player = GameObject.FindGameObjectWithTag("Player");
+        ranks = player.GetComponent<BasicMovement>();
+>>>>>>> cf708461c1b23e010f9dfe4521a1eccefac675dd
 	}
 	
 	// Update is called once per frame
@@ -25,11 +42,21 @@ public class Timer : MonoBehaviour {
             timmer.gameObject.SetActive(true);
         } else
         {
+<<<<<<< HEAD
             timmer.gameObject.SetActive(false);
             timerr.gameObject.SetActive(true);
         }
         timmer.text = FormatTimer(timer);
         timerr.text = FormatTimer(timer);
+=======
+            timerCountdown.gameObject.SetActive(false);
+            timerInGame.gameObject.SetActive(true);
+            position.gameObject.SetActive(true);
+        }
+        timerCountdown.text = FormatTimer(timer);
+        timerInGame.text = FormatTimer(timer);
+        position.text = ranks.rank.ToString() + "/4";
+>>>>>>> cf708461c1b23e010f9dfe4521a1eccefac675dd
     }
 
     private string FormatTimer(float timer)
