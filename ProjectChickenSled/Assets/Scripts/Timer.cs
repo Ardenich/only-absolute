@@ -13,6 +13,7 @@ public class Timer : MonoBehaviour {
 
     GameObject player;
     BasicMovement ranks;
+    Scene currScene;
 
 	// Use this for initialization
 	void Start () {
@@ -22,23 +23,26 @@ public class Timer : MonoBehaviour {
 
         player = GameObject.FindGameObjectWithTag("Player");
         ranks = player.GetComponent<BasicMovement>();
-	}
+
+        currScene = SceneManager.GetActiveScene();
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        timer = Time.time - 4;
-        if (timer < 0)
-        {
-            timerCountdown.gameObject.SetActive(true);
-        } else
-        {
-            timerCountdown.gameObject.SetActive(false);
-            timerInGame.gameObject.SetActive(true);
-            position.gameObject.SetActive(true);
-        }
-        timerCountdown.text = FormatTimer(timer);
-        timerInGame.text = FormatTimer(timer);
-        position.text = ranks.rank.ToString() + "/4";
+        timer = (Time.timeSinceLevelLoad) -4;
+            if (timer < 0)
+            {
+                timerCountdown.gameObject.SetActive(true);
+            }
+            else
+            {
+                timerCountdown.gameObject.SetActive(false);
+                timerInGame.gameObject.SetActive(true);
+                position.gameObject.SetActive(true);
+            }
+            timerCountdown.text = FormatTimer(timer);
+            timerInGame.text = FormatTimer(timer);
+            position.text = ranks.rank.ToString() + "/4";
     }
 
     private string FormatTimer(float timer)

@@ -11,5 +11,6 @@ public class ObstacleSlide : MonoBehaviour {
             other.gameObject.transform.Rotate(0, 10, 0);
         }
         yield return new WaitForSeconds(2);
+        this.gameObject.SetActive(false);
     }
 }
