@@ -7,6 +7,6 @@ public class LoadStage2 : MonoBehaviour {
 
     public void StartScene()
     {
-        SceneManager.LoadScene("Trial");
+        SceneManager.LoadScene("Stage2");
     }
 }

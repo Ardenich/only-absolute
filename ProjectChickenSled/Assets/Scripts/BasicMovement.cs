@@ -34,7 +34,7 @@ public class BasicMovement : MonoBehaviour {
 
     void Update()
     {
-        timer = Time.time;
+        timer = Time.timeSinceLevelLoad;
         rank = ranker.playerRank;
     }
     
