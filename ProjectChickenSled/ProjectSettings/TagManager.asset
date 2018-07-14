@@ -5,17 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Terrain
-<<<<<<< HEAD
-  - Wheel
-=======
   - NPC
   - FinishLine
   - Music
-<<<<<<< HEAD
->>>>>>> cf708461c1b23e010f9dfe4521a1eccefac675dd
-=======
   - Snow
->>>>>>> 1b7ecc32c59cf457c12134bf7f7e9a861a379a99
   layers:
   - Default
   - TransparentFX

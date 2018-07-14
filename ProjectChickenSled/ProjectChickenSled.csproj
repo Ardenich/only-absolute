@@ -82,10 +82,6 @@
     <Compile Include="Assets\Scripts\BasicMovement.cs" />
     <Compile Include="Assets\Scripts\ButtonExit.cs" />
     <Compile Include="Assets\Scripts\ButtonStart.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\Scripts\FinishLine.cs" />
-    <Compile Include="Assets\Scripts\TerrainHugger.cs" />
-=======
     <Compile Include="Assets\Scripts\CamStabilizer.cs" />
     <Compile Include="Assets\Scripts\CreditsButton.cs" />
     <Compile Include="Assets\Scripts\FinishLine.cs" />
@@ -102,7 +98,6 @@
     <Compile Include="Assets\Scripts\PositionTrackerMap2.cs" />
     <Compile Include="Assets\Scripts\SelfDriving.cs" />
     <Compile Include="Assets\Scripts\SelfDrivingMap2.cs" />
->>>>>>> cf708461c1b23e010f9dfe4521a1eccefac675dd
     <Compile Include="Assets\Scripts\Timer.cs" />
   </ItemGroup>
   <ItemGroup>

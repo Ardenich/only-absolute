@@ -8,11 +8,7 @@ public class BasicMovement : MonoBehaviour {
     float steer;
     float turnSpeed = 1f;
     float brake = 3f;
-<<<<<<< HEAD
-    float moveSpeed = 200f;
-=======
     public float moveSpeed = 300f;
->>>>>>> cf708461c1b23e010f9dfe4521a1eccefac675dd
     public float timer;
 
     public Rigidbody rb;
@@ -24,7 +20,7 @@ public class BasicMovement : MonoBehaviour {
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Vector3 cog = new Vector3(0, 0, 0);
+        Vector3 cog = new Vector3(0, -1, 0);
         rb.centerOfMass = cog;
 
         ranker = tracer.GetComponent<Positioning>();
@@ -50,8 +46,6 @@ public class BasicMovement : MonoBehaviour {
         }
         transform.Rotate(0, steer * turnSpeed, 0);
     }
-<<<<<<< HEAD
-=======
 
     private void OnCollisionExit(Collision collision)
     {
@@ -81,5 +75,4 @@ public class BasicMovement : MonoBehaviour {
             moveSpeed = 0;
         }
     }
->>>>>>> cf708461c1b23e010f9dfe4521a1eccefac675dd
 }

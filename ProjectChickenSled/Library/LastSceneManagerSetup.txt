@@ -1,10 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Stage1.unity
-  isLoaded: 1
-  isActive: 1
-- path: Assets/Scenes/Trial.unity
-=======
 - path: Assets/Scenes/Stage Select.unity
   isLoaded: 0
   isActive: 0
@@ -12,16 +6,12 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
 - path: Assets/Scenes/Stage2.unity
-<<<<<<< HEAD
->>>>>>> cf708461c1b23e010f9dfe4521a1eccefac675dd
-=======
   isLoaded: 0
   isActive: 0
 - path: Assets/Scenes/Credits.unity
   isLoaded: 0
   isActive: 0
 - path: Assets/Scenes/MainMenu.unity
->>>>>>> 1b7ecc32c59cf457c12134bf7f7e9a861a379a99
   isLoaded: 1
   isActive: 1
 - path: Assets/Scenes/Trial.unity
